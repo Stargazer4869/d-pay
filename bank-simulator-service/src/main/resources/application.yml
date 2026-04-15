@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: bank-simulator-service
+  flyway:
+    default-schema: bank
+    schemas: bank
+    table: bank_flyway_history
+    locations: classpath:db/migration/bank
+server:
+  port: 8085

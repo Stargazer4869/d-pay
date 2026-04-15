@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: ledger-service
+  flyway:
+    enabled: false
+server:
+  port: 8083

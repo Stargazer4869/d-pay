@@ -1,0 +1,48 @@
+# Maven / Java build output
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+dependency-reduced-pom.xml
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
+
+# Logs and runtime files
+logs/
+*.log
+*.out
+*.pid
+*.seed
+
+# Test and coverage artifacts
+.surefire-*
+.failsafe-*
+.pytest_cache/
+coverage/
+jacoco.exec
+
+# IDEs and editors
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+.factorypath
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local environment overrides
+.env
+.env.*
+!.env.example
+*.local
+.testcontainers.properties

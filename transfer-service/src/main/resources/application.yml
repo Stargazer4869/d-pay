@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: transfer-service
+  flyway:
+    default-schema: transfer
+    schemas: platform,transfer
+    table: transfer_flyway_history
+    locations: classpath:db/migration/transfer
+  kafka:
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+server:
+  port: 8082
+app:
+  kafka:
+    topic: gateway-events

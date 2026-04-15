@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: payment-service
+  flyway:
+    enabled: false
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    listener:
+      missing-topics-fatal: false
+server:
+  port: 8081
+app:
+  kafka:
+    topic: gateway-events
